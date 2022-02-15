@@ -1,0 +1,11 @@
+<div class="gallery">
+  <div class="gallery-card"
+    *ngFor="let image of gallery"
+    (click)="onImageClick(image)">
+    <div class="loader-wrapper" *ngIf="!image.isLoaded">
+      <div class="loader"></div>
+    </div>
+    <img class="card-img" [src]="image.url" (load)="onImgLoaded(image)">
+  </div>
+</div>
+

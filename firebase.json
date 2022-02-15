@@ -1,0 +1,20 @@
+{
+  "hosting": [
+    {
+      "target": "mfe",
+      "public": "dist/image-gallery-mfe",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ]
+    }
+  ]
+}
+
